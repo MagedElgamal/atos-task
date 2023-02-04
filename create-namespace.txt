@@ -1,0 +1,36 @@
+kubectl create namespace jenkins
+kubectl create namespace sonarqube
+kubectl create namespace nexus
+kubectl create namespace app-dev
+kubectl create namespace app-tst
+kubectl create namespace app-prd
+
+
+#Command_OUTPUT
+magedelgamal@Mageds-MacBook-Pro ~ % kubectl create namespace jenkins
+kubectl create namespace sonarqube
+kubectl create namespace nexus
+kubectl create namespace app-dev
+kubectl create namespace app-tst
+kubectl create namespace app-prd
+
+namespace/jenkins created
+namespace/sonarqube created
+namespace/nexus created
+namespace/app-dev created
+namespace/app-tst created
+namespace/app-prd created 
+
+#list_namespaces
+magedelgamal@Mageds-MacBook-Pro ~ % kubectl get namespace
+NAME              STATUS   AGE
+app-dev           Active   59s
+app-prd           Active   58s
+app-tst           Active   58s
+default           Active   37m
+jenkins           Active   61s
+kube-node-lease   Active   37m
+kube-public       Active   37m
+kube-system       Active   37m
+nexus             Active   60s
+sonarqube         Active   60s
